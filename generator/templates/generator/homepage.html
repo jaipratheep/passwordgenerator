@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title>password_generator</title>
+  </head>
+  <body>
+    <div class="container text-center">
+
+
+    <h1 style=text-align:center > Password Generator</h1>
+
+<form action="{% url 'password'  %}"">
+
+
+    <select name="length"> Character Length
+      <option>6</option>
+      <option selected=selected >8</option>
+      <option>10</option>
+    </select> Character Length
+    <br>
+    <input type="checkbox" name='uppercase' >UpperCase
+    <br>
+    <input type="checkbox" name='numbers'>Numbers
+    <br>
+    <input type="checkbox" name='special'>Special Characters
+    <br>
+<input type="submit" name="Generate Password" value="Generate Password" class="btn btn-primary">
+</form>
+
+<footer>Copyright@ Jai2020</footer>
+<p><a href="{% url 'about' %}">About</a></p>
+</div>
+  </body>
+</html>
